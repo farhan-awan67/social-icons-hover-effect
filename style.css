@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.769);
+}
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    font-size: 35px;
+    color: blue;
+}
+i:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 18px rgba(255, 160, 122, 0.944));
+    transform: scale(2, 2);
+}
+
+@media(max-width: 500px){
+    .social{
+        flex-direction: column;
+        width: 100%;
+    }
+}
